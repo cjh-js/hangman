@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #f0edcc;
+  background-color: #02343f;
+}
+
+.game-wrap {
+  margin-top: 150px;
+  display: flex;
+}
+
+.figure-wrap {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  margin-right: 60px;
+}
+
+.figure-part {
+  display: none;
+}
+
+/* wrong letter */
+.wrong-letter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 20px;
+  width: 200px;
+}
+
+.wrong-letter strong {
+  margin-bottom: 10px;
+}
+
+/* write a letter */
+.write-letter {
+  color: white;
+  font-size: 40px;
+  margin-top: 40px;
+  display: flex;
+}
+.each-letter {
+  display: inline-flex;
+  border-bottom: 2px solid wheat;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 0 3px;
+  width: 20px;
+}
+
+/* overlap letter */
+.letter-again {
+  transition: all 0.5s ease-in-out;
+  color: white;
+  background-color: #0f758b;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  position: fixed;
+  bottom: -50px;
+}
+
+.overlapErr {
+  transform: translateY(-50px);
+}
+
+/* pop up */
+.pop-up {
+  width: 300px;
+  color: white;
+  background-color: #0f758b;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  border-radius: 10px;
+  display: none;
+}
+
+.pop-up button {
+  border: none;
+  color: #0f758b;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pop-up button:focus {
+  outline: none;
+}
+
+.show {
+  display: flex;
+}
